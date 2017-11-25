@@ -19,8 +19,8 @@ $(document).ready(function() {
           $content.text(post.content);
           $post.append($content);
           
-          let $photo = $('img');
-          $content.attr('src', post.photo)
+          let $photo = $('<img>');
+          $photo.attr('src', post.photo)
           $post.append($photo);
           
           $postsDiv.append($post);
