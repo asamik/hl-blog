@@ -1,8 +1,8 @@
-let postsUrl = 'https://raw.githubusercontent.com/babelthuap/hayalab-blog/master/posts.json';
 
 $(document).ready(function() {
 
-  let postsDiv = $('#posts');
+  let postsUrl = 'https://raw.githubusercontent.com/babelthuap/hayalab-blog/master/posts.json';
+  let $postsDiv = $('#posts');
 
   $.get(postsUrl)
       .done(function(data) {
@@ -19,7 +19,7 @@ $(document).ready(function() {
           $content.text(post.content);
           $post.append($content);
 
-          postsDiv.append($post);
+          $postsDiv.append($post);
         }
       })
       .fail(function(err) {
