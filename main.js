@@ -1,7 +1,7 @@
 
 $(document).ready(function() {
 
-  let postsUrl = 'https://raw.githubusercontent.com/babelthuap/hayalab-blog/master/posts.json';
+  let postsUrl = 'https://raw.githubusercontent.com/asamik/hl-blog/master/posts.json';
   let $postsDiv = $('#posts');
 
   $.get(postsUrl)
