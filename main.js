@@ -18,7 +18,11 @@ $(document).ready(function() {
           let $content = $('<p>');
           $content.text(post.content);
           $post.append($content);
-
+          
+          let $photo = $('img');
+          $content.attr('src', post.photo)
+          $post.append($photo);
+          
           $postsDiv.append($post);
         }
       })
